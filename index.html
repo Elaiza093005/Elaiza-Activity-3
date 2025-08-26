@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Task Manager</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Interactive Task Manager</h1>
+  
+
+  <div class="controls">
+    <input type="text" id="taskInput" placeholder="New task...">
+    <select id="prioritySelect">
+      <option value="low">Low Priority</option>
+      <option value="medium">Medium Priority</option>
+      <option value="high">High Priority</option>
+    </select>
+    <button id="addTaskBtn">Add Task</button>
+  </div>
+  
+  <div class="controls">
+    <input type="text" id="searchInput" placeholder="Search tasks...">
+    <button id="clearSearchBtn">Clear</button>
+  </div>
+
+  <div class="board">
+    <div class="column" data-status="todo">
+      <h2>To Do</h2>
+      <div class="task-list" id="todo"></div>
+    </div>
+    <div class="column" data-status="inprogress">
+      <h2>In Progress</h2>
+      <div class="task-list" id="inprogress"></div>
+    </div>
+    <div class="column" data-status="done">
+      <h2>Done</h2>
+      <div class="task-list" id="done"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
